@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventActivity">
+
+    <TextView
+        android:id="@+id/text_enter_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_enter_event_name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_enter_event_name"
+        android:hint="@string/event_name"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button_go"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/button_go"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/event_name"
+        android:onClick="createEvent"
+        android:background="@color/green"/>
+
+    <Button
+        android:id="@+id/button_change_core_id"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/button_change_core_id"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_go"
+        android:onClick="changeCoreID"
+        android:background="@color/teal"/>
+
+</RelativeLayout>

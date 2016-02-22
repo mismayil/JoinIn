@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.freescale.joinin.FinishEventActivity">
+
+    <TextView
+        android:id="@+id/text_verify_finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_verify_finished"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_verify_coreid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_verify_coreid"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text_verify_finished"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edit_verify_coreid"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/text_verify_coreid"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button_confirm_finish"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/button_confirm_finish"
+        android:layout_below="@id/edit_verify_coreid"
+        android:layout_centerHorizontal="true"
+        android:onClick="confirmFinish"
+        android:background="@color/red"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/button_back_to_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_confirm_finish"
+        android:layout_marginTop="200dp"
+        android:onClick="backToReg"
+        android:background="@color/teal"/>
+
+</RelativeLayout>
